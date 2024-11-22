@@ -1,3 +1,4 @@
+// Pacote peincipal da aplicacao
 package main
 
 import (
@@ -6,8 +7,6 @@ import (
 
 	"github.com/gin-gonic/gin"
 )
-
-// ... (Your other Go code, including the defined structures)
 
 func main() {
 	router := gin.Default()
