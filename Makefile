@@ -12,7 +12,7 @@ run:
 	
 post:
 	curl -H 'Content-Type: application/json' \
-	-d '{"name":"Diversas", "color": "vermelho"}' \
+	-d '{"name": "$(d)", "color": "vermelho"}' \
 	-X POST \
 	-v \
 	localhost:8080/category 
@@ -29,3 +29,15 @@ delete:
 	-X DELETE \
 	-v \
 	localhost:8080/category/1 
+
+get:
+	curl -H 'Content-Type: application/json' \
+	-X GET \
+	-v \
+	localhost:8080/category/6
+
+getall:
+	curl \
+	-X GET \
+	-v \
+	localhost:8080/category
